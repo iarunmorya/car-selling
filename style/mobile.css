@@ -1,0 +1,92 @@
+/* media quaries */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    
+}
+
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+        
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+    .header.active{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+    
+}
+
+@media(max-width:768px){
+    .header #login-btn i{
+        display: block;
+        margin-top: .8rem;
+    }
+
+    .header #login-btn .btn{
+        display: none;
+    }
+
+    #menu-btn{
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+        margin-bottom: 0.5rem;
+        transform-origin: center;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar ul li a{
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+    .header .navbar ul{
+        display: block;
+    }
+
+
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+}
